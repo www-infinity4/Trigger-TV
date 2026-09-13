@@ -26,7 +26,31 @@
   <meta name="twitter:description" content="Full western TV episodes and movies, synchronized like a real channel.">
   <meta name="twitter:image" content="https://i.ytimg.com/vi/dCMoVmR5LZw/maxresdefault.jpg">
 
-  <link rel="stylesheet" href="styles.css?v=20260913b">
+  <link rel="stylesheet" href="styles.css?v=20260913c">
+  <style>
+    /* Trigger's hamburger is left-side. Keep the shared remote fully on-screen. */
+    .masthead .channel-menu > nav {
+      left: 0 !important;
+      right: auto !important;
+      z-index: 10000 !important;
+      width: min(320px, calc(100vw - 24px)) !important;
+      max-width: calc(100vw - 24px) !important;
+    }
+    @media (max-width: 700px) {
+      .masthead .channel-menu { position: static !important; }
+      .masthead .channel-menu > nav {
+        position: fixed !important;
+        top: 66px !important;
+        left: 12px !important;
+        right: 12px !important;
+        width: auto !important;
+        max-width: none !important;
+        max-height: calc(100dvh - 78px) !important;
+        overflow-y: auto !important;
+        overscroll-behavior: contain !important;
+      }
+    }
+  </style>
   <script>if(!location.search&&history.replaceState)history.replaceState(null,"",location.pathname+"?card=20260913a"+location.hash);</script>
   <script src="https://www-infinity4.github.io/Control-Phi/control-phi.js" onerror="this.onerror=null;this.src='https://www-infinity4.github.io/News-Phi/control-phi.js'"></script>
 </head>
