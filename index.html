@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#1b0f08">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Trigger TV — Westerns Are Already Playing</title>
+  <meta name="description" content="Trigger TV is a synchronized 24/7 western channel with full classic western TV episodes and full-length western movies. A new viewer-local lineup begins every midnight.">
+  <link rel="canonical" href="https://www-infinity4.github.io/Trigger-TV/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Trigger TV">
+  <meta property="og:title" content="Trigger TV — Westerns Are Already Playing">
+  <meta property="og:description" content="Classic western TV and full western movies on a synchronized 24/7 channel.">
+  <meta property="og:url" content="https://www-infinity4.github.io/Trigger-TV/?card=20260913a">
+  <meta property="og:image" content="https://i.ytimg.com/vi/dCMoVmR5LZw/maxresdefault.jpg">
+  <meta property="og:image:secure_url" content="https://i.ytimg.com/vi/dCMoVmR5LZw/maxresdefault.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="720">
+  <meta property="og:image:alt" content="Classic western movie scene for Trigger TV">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Trigger TV — Westerns Are Already Playing">
+  <meta name="twitter:description" content="Full western TV episodes and movies, synchronized like a real channel.">
+  <meta name="twitter:image" content="https://i.ytimg.com/vi/dCMoVmR5LZw/maxresdefault.jpg">
+
+  <link rel="stylesheet" href="styles.css?v=20260913a">
+  <script>if(!location.search&&history.replaceState)history.replaceState(null,"",location.pathname+"?card=20260913a"+location.hash);</script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="#top" aria-label="Trigger TV home">
+      <span class="brand-mark">T</span>
+      <span>TRIGGER TV</span>
+    </a>
+    <details class="channel-menu">
+      <summary aria-label="Open channel remote">☰ <span>Channels</span></summary>
+      <nav id="channelNav" aria-label="Switch channels"></nav>
+    </details>
+    <div class="live-pill"><i></i> ON AIR</div>
+    <time id="stationClock">--:-- -- local</time>
+  </header>
+
+  <main id="top">
+    <section class="theater" aria-labelledby="nowTitle">
+      <div class="marquee">
+        <div>
+          <p id="modeLabel">LIVE TRIGGER TV</p>
+          <h1 id="nowTitle">Loading the trail…</h1>
+          <span id="nowMeta"></span>
+        </div>
+        <div class="program-time" id="programTime">Please wait</div>
+      </div>
+
+      <div class="screen-shell">
+        <div id="player" class="player" aria-label="Trigger TV video player"></div>
+        <div id="stationCard" class="station-card" hidden>
+          <span>TRIGGER TV</span>
+          <strong id="stationCardTitle">The next ride starts soon</strong>
+          <small id="stationCardCountdown"></small>
+        </div>
+        <button id="enterButton" class="enter-button" type="button">
+          <strong>Enter Trigger TV</strong>
+          <span>Join the western at the exact moment airing now</span>
+        </button>
+      </div>
+
+      <div class="controls">
+        <button id="startOverButton" type="button">Start over</button>
+        <button id="rewindButton" type="button">Rewind 30 sec</button>
+        <button id="liveButton" class="live-button" type="button"><i></i> Join live</button>
+        <button id="shareButton" class="share-button" type="button">Share · +1/10 ⭐</button>
+        <button id="walletButton" class="wallet-button" type="button">Wallet ⭐ <span id="walletAmount">0.0</span></button>
+        <span id="shareStatus" role="status" aria-live="polite"></span>
+      </div>
+
+      <div class="progress-wrap">
+        <div class="progress-meta">
+          <span id="positionLabel">Station clock</span>
+          <span id="remainingLabel">-- remaining</span>
+        </div>
+        <div class="progress-track"><div id="progressBar"></div></div>
+      </div>
+    </section>
+
+    <section class="next-up">
+      <div class="section-heading">
+        <p>THE TRAIL AHEAD</p>
+        <h2>Next on Trigger TV</h2>
+      </div>
+      <div id="nextCards" class="next-grid"></div>
+    </section>
+
+    <section class="classics">
+      <div class="section-heading">
+        <p>WESTERN ARCHIVE</p>
+        <h2>Full-show sources</h2>
+      </div>
+      <div class="classic-grid">
+        <a href="https://www.youtube.com/@GrjngoWesternMovies" target="_blank" rel="noopener">
+          <b>Western Movies</b><span>Licensed full-length cowboy films</span>
+        </a>
+        <a href="https://www.youtube.com/@TheLoneRanger" target="_blank" rel="noopener">
+          <b>The Lone Ranger</b><span>Full classic television episodes</span>
+        </a>
+        <a href="https://www.youtube.com/@wildweststories" target="_blank" rel="noopener">
+          <b>Bonanza</b><span>Long-form classic western episode collections</span>
+        </a>
+        <a href="https://www.youtube.com/results?search_query=Hopalong+Cassidy+full+episodes+western" target="_blank" rel="noopener">
+          <b>Hopalong Cassidy</b><span>Classic full western television episodes</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="guide">
+      <div class="section-heading guide-heading">
+        <div>
+          <p>7-DAY GUIDE · NEW LINEUP AT 12:00 AM VIEWER LOCAL TIME</p>
+          <h2>Trigger TV guide</h2>
+        </div>
+        <span id="guideDate"></span>
+      </div>
+      <div id="guideRows" class="guide-rows"></div>
+    </section>
+
+    <section class="channel-directory">
+      <div class="section-heading">
+        <p>REMOTE</p>
+        <h2>Other channels</h2>
+      </div>
+      <nav id="directoryNav" aria-label="All active channels"></nav>
+    </section>
+  </main>
+
+  <footer>
+    <b>TRIGGER TV</b>
+    <span>Westerns TV shows &amp; movies 24/7.</span>
+  </footer>
+
+  <script src="data/catalog.js?v=20260913a"></script>
+  <script src="app.js?v=20260913a"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
